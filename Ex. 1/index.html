@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <head>
     <title>Ex Form 1</title>
+    <style>
+        body > div {
+            width: 30vw;
+            padding-left: 35vw;
+            text-align: center;
+        }
+        .fill {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <div >
+        <form name="principale">
+            <input type="text" class="fill" id="name" name="name" required>
 
+            <div>
+                <input type="checkbox" id="scelta1" name="scelta" value="sc1">
+                <label>Scelta 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="scelta2" name="scelta" value="sc2">
+                <label>Scelta 2</label>
+            </div>
+            
+
+            <input type="radio" name="genere" id="uomo"> 
+            <label for="uomo">Uomo</label>
+            <input type="radio" name="genere" id="donna"> 
+            <label for="donna">Donna</label>
+            <input type="radio" name="genere" id="altro"> 
+            <label for="altro">Altro</label>
+
+            <textarea rows="4"></textarea>
+
+        </form>
+    </div>
 </body>
