@@ -1,0 +1,11 @@
+/* questo css è stato fatto ad occhio */
+
+body {
+    width: 30vw;
+    padding-left: 35vw;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
