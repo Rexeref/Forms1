@@ -1,0 +1,58 @@
+[
+    {
+        "type": "txtField",
+        "id": "name",
+        "name": "-",
+        "label": "-",
+        "placeholder": "Inserire il nome",
+        "required": true
+    },
+    {
+        "type": "check",
+        "id": "scelta1",
+        "name": "-",
+        "label": "Scelta 1",
+        "placeholder": "-",
+        "required": false
+    },
+    {
+        "type": "check",
+        "id": "scelta2",
+        "name": "-",
+        "label": "Scelta 2",
+        "placeholder": "-",
+        "required": false
+    },
+    {
+        "type": "radio",
+        "id": "uomo",
+        "name": "genere",
+        "label": "Uomo",
+        "placeholder": "-",
+        "required": false
+    },
+    {
+        "type": "radio",
+        "id": "donna",
+        "name": "genere",
+        "label": "Donna",
+        "placeholder": "-",
+        "required": false
+    },
+    {
+        "type": "radio",
+        "id": "altro",
+        "name": "genere",
+        "label": "Altro",
+        "placeholder": "-",
+        "required": false
+    },
+    {
+        "type": "txtArea",
+        "id": "areaTesto",
+        "name": "-",
+        "label": "-",
+        "placeholder": "Qui potresti inserire una descrizione . . .",
+        "required": false
+    }
+]
