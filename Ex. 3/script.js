@@ -1,4 +1,10 @@
-import data from './formElements.json' assert {type: 'json'};
+var requestURL = "formElements.json";
+var request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = "json";
+request.send();
+
+
 
 function createForm(name) {
     const form = document.createElement('form');
@@ -47,11 +53,11 @@ function createTextarea(id, placeholder) {
     return textarea;
 }
 
-function createPage() {
+function createPage(obj) {
 
     const form = createForm('principale');
 
-    data.forEach(obj => {
+    obj.forEach(obj => {
         if (obj.type === "txtField") {
             form.appendChild(createTextField(obj.id, obj.placeholder, obj.required));
         }
@@ -68,8 +74,5 @@ function createPage() {
 
 }
 
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", createPage);
-} else {
-    createPage();
-}
+//parsing
+request.onload = () => {createPage(request.response);}
